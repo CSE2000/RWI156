@@ -1,6 +1,6 @@
 package Oops;
 
-public class Passenger {
+class Train {
 
 		String pname;
 		boolean bookingconfirmation;
@@ -8,7 +8,7 @@ public class Passenger {
 		String to;
 		float distancetocovered;
 
-	    Passenger (String pname,boolean bookingconfirmation,String from,String to,float distancetocovered) {
+	    Train (String pname,boolean bookingconfirmation,String from,String to,float distancetocovered) {
 			
 			System.out.println("My journey starts");
 			
@@ -19,7 +19,7 @@ public class Passenger {
 			this.distancetocovered = distancetocovered;
 		}
 
-		Passenger () {
+		Train () {
 		pname = "Krishna";
 		bookingconfirmation = true;
 		from = "Delhi";
@@ -28,11 +28,11 @@ public class Passenger {
 		}
 	}
 
-	class Train {
+public class Passenger{
 
 		public static void main(String[] args) {
 			
-			Passenger p1 = new Passenger("Krishna",true,"Delhi","Kanpur",800.35f);
+			Train p1 = new Train("Krishna",true,"Delhi","Kanpur",800.35f);
 	        
 	        System.out.println("pname = "+p1.pname);
 			System.out.println("bookingconfirmation = "+p1.bookingconfirmation);
@@ -40,7 +40,7 @@ public class Passenger {
 			System.out.println("to = "+p1.to);
 			System.out.println("distancetocovered = "+p1.distancetocovered);
 
-	        Passenger p2 = new Passenger();
+	       Train p2 = new Train("Shubham Pandey",true, "Kanpur", "Gorakhpur", 500.36f);
 	        
 	        System.out.println("pname = "+p2.pname);
 			System.out.println("bookingconfirmation = "+p2.bookingconfirmation);
